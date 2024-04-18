@@ -1,0 +1,26 @@
+{% extends 'base2.html.twig' %}
+
+{% block body %}
+<h1>Current Session Data</h1>
+{% if sessionData is empty %}
+    <p>No data in the session.</p>
+{% else %}
+    <table>
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in sessionData %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+<a href="{{ path('pig_start') }}">Back to Home</a>
+{% endblock %}

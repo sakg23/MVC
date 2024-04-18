@@ -1,0 +1,10 @@
+{% extends 'base2.html.twig' %}
+
+{% block title %}Draw a Card{% endblock %}
+
+{% block body %}
+<h1>Drawn Card</h1>
+<p>{{ card.suit }} of {{ card.value }}</p>
+<p>Remaining Cards: {{ remaining }}</p>
+<a href="{{ path('draw_card') }}">Draw Another Card</a>
+{% endblock %}

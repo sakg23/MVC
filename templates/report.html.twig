@@ -1,0 +1,28 @@
+{# templates/report.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Redovisning{% endblock %}
+
+{% block body %}
+    <h1>Redovisning för kursmomentet</h1>
+    <h1 id="kmom01"></h1>
+    Hej där! Jag ska berätta lite om mina förkunskaper och tidigare erfarenheter när det gäller objektorientering.
+    Jag har faktiskt en del erfarenhet av objektorienterad programmering, pga oopython, även om jag kanske inte är en fullfjädrad expert än. Jag har jobbat med det här konceptet tidigare och har en grundläggande förståelse för hur klasser och objekt fungerar.
+    När det gäller PHPs modell för klasser och objekt, så är det faktiskt ganska lätt att komma igång om du har lite grundläggande kunskaper i programmering och goda kunskaper från webtec kursen. För att komma igång behöver man förstå grunderna i objektorientering, som klasser, objekt, egenskaper och metoder. Det handlar om att organisera din kod på ett sätt som gör den mer modulär och lättare att underhålla.
+    När jag tittar på kodbasen för den senaste uppgiften, ser jag att den är väl strukturerad och organiserad. Det är tydligt vilka olika delar av koden som gör vad, och det är lätt att följa logiken. Jag gillar särskilt hur olika routes och funktioner är uppdelade i olika metoder och kontroller.
+    När jag läste artikeln “PHP The Right Way”, fann jag flera delar som var extra intressanta och värdefulla. Jag tycker att avsnittet om modern PHP är särskilt användbart, eftersom det ger en bra översikt över de senaste funktionerna och bästa praxis. Jag skulle gärna vilja veta mer om hur man använder ramverk som Symfony, eftersom det verkar vara ett kraftfullt verktyg för att bygga webbapplikationer.
+    Min TIL för detta kmom är att det är viktigt att fortsätta lära sig och utvecklas som programmerare. Även om jag redan har en del kunskap och erfarenhet, finns det alltid nya saker att lära sig och förbättra. Det är spännande att utforska nya koncept och tekniker, och jag ser fram emot att fortsätta min resa som utvecklare!
+
+    <h1 id="kmom02"></h1>
+    Komposition innebär att en klass innehåller instanser av en annan klass. Detta används för att bygga komplexa objekt som består av flera delar, vilket gör det möjligt att dela funktionalitet på ett flexibelt sätt utan att använda arv. I PHP skapar du objekt inuti andra objekt för att uppnå komposition.
+    Interface definierar en standardiserad uppsättning metoder som en klass måste implementera, utan att specificera hur dessa metoder utförs. Detta tillåter olika klasser att implementera samma interface men på olika sätt. Interfaces i PHP deklareras med nyckelordet interface och implementeras med implements.
+    Trait är en mekanism i PHP som tillåter utvecklare att återanvända kod i klasser genom att inkludera trait i klassen. Detta är särskilt användbart i språk som PHP där multipelt arv inte är tillåtet. Traits inkluderas i klasser med use.
+    Jag löste uppgiften genom att skapa en DeckController i Symfony som hanterar en kortlek. Kontrollern inkluderar metoder för att visa, blanda, dra, och dela ut kort från kortleken, och all funktionalitet är tillgänglig genom ett RESTful API.
+    Nöjd/Missnöjd: Jag är överlag nöjd med hur jag implementerade uppgiften, speciellt med hur jag organiserade koden och använde Symfony's funktioner. Jag är dock mindre nöjd med hur jag hanterade sessioner, eftersom det kändes som jag kunde ha gjort det mer effektivt.
+    Förbättringspotential: I framtiden skulle jag vilja förbättra hanteringen av sessioner för att göra API:t mer robust och säkert. Dessutom skulle jag kunna lägga till mer felhantering och validering för att hantera olika felaktiga input från användarna bättre.
+    Att arbeta med Symfony och följa MVC (Model-View-Controller) mönstret har varit mycket lärorikt. MVC-strukturen hjälper till att hålla koden organiserad och separerar logik på ett sätt som gör applikationen lättare att underhålla och utveckla vidare. Symfony erbjuder en robust struktur och många verktyg som underlättar utvecklingen, men det kräver också en del inlärning för att förstå alla delar av ramverket fullt ut.
+
+    TIL för detta kursmoment,i detta kursmoment lärde jag mig framför allt vikten av att noggrant planera och strukturera en API-design. Jag insåg också hur kraftfullt Symfony kan vara när det kommer till att bygga webbapplikationer, och jag fick en djupare förståelse för hur sessionshantering kan implementeras i ett webb-API. Genom att lösa denna uppgift har jag fått praktisk erfarenhet av objektorienterade principer i PHP och hur de kan tillämpas i en verklig applikation.
+
+    {% endblock %}

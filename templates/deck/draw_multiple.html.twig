@@ -1,0 +1,14 @@
+{% extends 'base2.html.twig' %}
+
+{% block title %}Draw Multiple Cards{% endblock %}
+
+{% block body %}
+<h1>Drawn Cards</h1>
+<ul>
+    {% for card in cards %}
+    <li>{{ card.suit }} of {{ card.value }}</li>
+    {% endfor %}
+</ul>
+<p>Remaining Cards: {{ remaining }}</p>
+<a href="{{ path('draw_multiple_cards', {'num': num}) }}">Draw {{ num }} More Cards</a>
+{% endblock %}

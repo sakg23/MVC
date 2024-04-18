@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Game Home{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Dice Game</h1>
+<ul>
+    <li><a href="{{ path('test_roll_dice') }}">Test Roll Dice</a></li>
+    <li><a href="{{ path('test_roll_num_dices', {'num': 5}) }}">Roll 5 Dices</a></li>
+    <li><a href="{{ path('test_dicehand', {'num': 5}) }}">Test Dice Hand with 5 Dices</a></li>
+    <li><a href="{{ path('pig_init_get') }}">Start New Game</a></li>
+    <li><a href="{{ path('session_debug') }}">Session Debug</a></li>
+    <li><a href="{{ path('session_delete') }}">Delete Session</a></li>
+</ul>
+{% endblock %}

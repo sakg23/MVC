@@ -1,0 +1,13 @@
+{% extends 'base2.html.twig' %}
+
+{% block title %}View Deck{% endblock %}
+
+{% block body %}
+<h1>Current Deck</h1>
+<ul>
+    {% for card in cards %}
+    <li>{{ card.suit }} of {{ card.value }}</li>
+    {% endfor %}
+</ul>
+<a href="{{ path('shuffle_deck') }}">Shuffle Deck</a>
+{% endblock %}
